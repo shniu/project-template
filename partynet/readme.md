@@ -28,7 +28,7 @@ Public key: EOS7KLp9T9zYPCmVXrHXyizbg8Qh5HNfb9d2adiCDjSWMMBnr2VQA
 
 - 账户2
 
-acount name: eosiocredit0
+acount name: eosiocredit1
 Private key: 5J4KhenJgRUAHUQtZHc3yZ1963ft8aiYqxo3DEwuoBFbjoDnkjP
 Public key: EOS8MDCrBb6ZZxqVjdmZR99a2gtDQkTmTsUuUN3xCejSn6fKnAhQv
 
