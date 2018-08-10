@@ -124,7 +124,20 @@ cleos set contract creditotoken contracts/eosio.token -p creditotoken
 cleos push action creditotoken create '{"issuer":"creditotoken","maximum_supply":"1000000000.0000 USDT","can_freeze":"0","can_recall":"0","can_whitel ist":"0"}' -p creditotoken
 
 // 发行代币
-cleos set contract creditotoken contracts/eosio.token -p creditotoken
+cleos push action creditotoken issue '{"to":"creditotoken","quantity":"1000000.0000 USDT","memo":"so cool"}' -p creditotoken
+cleos push action creditotoken issue '{"to":"creditotoken","quantity":"1000000.0000 USDT","memo":"so cool"}' -p creditotoken
+
+// 转账
+cleos push action creditotoken transfer '{"from":"digcreditnsh","to":"eosiocredit1","quantity":"100000.0000 RMT","memo":"airdrop"}' -p digcreditnsh:
+
+// 再发一种币
+cleos push action creditotoken create '{"issuer":"creditotoken","maximum_supply":"1000000000.0000 RMT","can_freeze":"0","can_recall":"0","can_whiteli st":"0"}' -p creditotoken
+
+
+// 查看代币资产情况
+// 第一个 creditotoken 是合约创建的账户，代表合约
+// 第二个 digcreditnsh 是持有代币的账户
+cleos get table creditotoken digcreditnsh accounts
 
 ```
 
