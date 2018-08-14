@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git status
+
 # Add
 git add .
 
