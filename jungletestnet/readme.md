@@ -4,6 +4,24 @@
 > Github: https://github.com/CryptoLions/EOS-Jungle-Testnet
 > 区块浏览器: http://dev.cryptolions.io
 
+Jungle testnet 信息
+```
+{
+  "server_version": "4f4e5c22",
+  "chain_id": "038f4b0fc8ff18a4f0842a8f0564611f6e96e8535901dd45e43ac8691a1c4dca",
+  "head_block_num": 9523646,
+  "last_irreversible_block_num": 9523324,
+  "last_irreversible_block_id": "0091507cc7d4b9df88e19e16bbbc232121594688ce55f493c778856b43e49cfc",
+  "head_block_id": "009151be6257c5a198a8ab105d87daee2d6ae08a92f06634b1e607d7ea21453b",
+  "head_block_time": "2018-08-13T08:50:39.000",
+  "head_block_producer": "alohaeostest",
+  "virtual_block_cpu_limit": 200000000,
+  "virtual_block_net_limit": 1048576000,
+  "block_cpu_limit": 199900,
+  "block_net_limit": 1048576
+}
+```
+
 #### 钱包与账户信息
 
 ```
