@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ex-sequence
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/ex_sequence?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+
+  flyway:
+    locations: classpath:db/migration
+    enabled: true
