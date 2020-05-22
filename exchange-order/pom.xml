@@ -5,17 +5,24 @@
     <parent>
         <artifactId>exchange</artifactId>
         <groupId>com.github.cs</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>exchange-order</artifactId>
+    <version>${revision}</version>
 
     <dependencies>
         <dependency>
             <groupId>com.github.cs</groupId>
             <artifactId>exchange-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.cs</groupId>
+            <artifactId>exchange-order-api</artifactId>
+            <version>${revision}</version>
         </dependency>
     </dependencies>
 

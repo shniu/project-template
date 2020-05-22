@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author niushaohan
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan(value = {"com.github.cs.exchange.order.infra"})
+@EnableFeignClients(basePackages = {"com.github.cs.exchange"})
 @Slf4j
 public class ExchangeOrderApplication {
     public static void main(String[] args) {
