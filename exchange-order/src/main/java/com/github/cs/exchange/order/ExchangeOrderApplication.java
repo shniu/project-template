@@ -11,7 +11,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @date 2020/5/22 07
  */
 @SpringBootApplication
-@MapperScan(value = {"com.github.cs.exchange.order.infra"})
+@MapperScan(value = {
+        "com.github.cs.exchange.order.infra",
+        "com.github.cs.exchange.order.domain.repository"
+})
 @EnableFeignClients(basePackages = {"com.github.cs.exchange"})
 @Slf4j
 public class ExchangeOrderApplication {

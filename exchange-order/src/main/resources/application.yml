@@ -6,7 +6,7 @@ spring:
     name: ex-order
 
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/ex_order?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://127.0.0.1:3308/ex_order?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
 
