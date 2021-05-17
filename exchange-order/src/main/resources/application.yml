@@ -1,9 +1,9 @@
 server:
-  port: 9001
+  port: 19100
 
 spring:
   application:
-    name: ex-order
+    name: ex-order-srv
 
   datasource:
     url: jdbc:mysql://127.0.0.1:3308/ex_order?useUnicode=true&characterEncoding=utf-8
@@ -13,6 +13,41 @@ spring:
   flyway:
     locations: classpath:db/migration
     enabled: true
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        cluster-name: DEFAULT
+        enabled: true
+        ephemeral: true
+        # username:
+        # access-key:
+        # secret-key:
+        # endpoint:
+        # group: DEFAULT_GROUP
+        # heart-beat-interval:
+        # heart-beat-timeout:
+        # instance-enabled: true
+        # ip:
+        # ip-delete-timeout:
+        # log-name:
+        # metadata:
+        # nacos-properties:
+        # namespace: dev
+        # naming-load-cache-at-start: false
+        # network-interface:
+        # password:
+        # port:
+        # register-enabled: true
+        # secure: false
+        # service: ex-order
+        # watch-delay:
+        # weight: 1
+        # watch:
+        #   enabled: true
+
+
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

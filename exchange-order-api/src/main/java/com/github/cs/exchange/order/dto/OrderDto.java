@@ -1,7 +1,9 @@
 package com.github.cs.exchange.order.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
-import lombok.experimental.Accessors;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
@@ -9,8 +11,10 @@ import java.math.BigDecimal;
  * @author niushaohan
  * @date 2020/5/22 12
  */
-@Accessors(fluent = true)
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class OrderDto {
     private Long orderId;
     private Long userId;
