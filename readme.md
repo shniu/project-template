@@ -25,3 +25,7 @@ Using Spring Cloud Alibaba.
 
 1. ex-order-srv -> port:19100
 2. ex-account-srv -> port:19200
+3. ex-matching-srv -> port:19300
+4. ex-clearing-srv -> port:19400
+5. ex-quotation-srv -> port:19500
+6. ...

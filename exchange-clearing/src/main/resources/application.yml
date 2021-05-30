@@ -1,0 +1,43 @@
+server:
+  port: 19400
+
+spring:
+  application:
+    name: ex-clearing-srv
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3308/ex_order?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+
+  flyway:
+    locations: classpath:db/migration
+    enabled: false
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        cluster-name: DEFAULT
+        enabled: true
+        ephemeral: true
+
+#    loadbalancer:
+#      ribbon:
+#        enabled: false
+
+#ex-account-srv:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
+
+ribbon:
+  eager-load:
+    enabled: true
+    clients: ex-account-srv
+#  http:
+#    client:
+#      enabled: true
+#  okhttp:
+#    enabled: true
+#  restclient:
+#    enabled: true
